@@ -20,7 +20,7 @@ SCAN_INTERVAL = timedelta(seconds=60)
 
 ICON = 'mdi:rocket'
 COMPONENT_NAME = 'launchlibrary'
-COMPONENT_VERSION = '1.0.0'
+COMPONENT_VERSION = '1.0.1'
 
 def setup_platform(hass, config, add_devices, discovery_info=None):
     add_devices([LaunchSensor()])
@@ -35,6 +35,7 @@ class LaunchSensor(Entity):
         self._launchstream = None
         self._component = COMPONENT_NAME
         self._componentversion = COMPONENT_VERSION
+        self.update()
 
     def update(self):
         baseurl = "https://launchlibrary.net/1.4/"
@@ -43,8 +44,8 @@ class LaunchSensor(Entity):
         self._state = launch["windowstart"]
         self._launchtimestamp = launch["wsstamp"]
         self._launchname = launch["name"]
-        self._agencyname = launch["rocket"]["agencies"][0]["name"]
-        self._agencycountry = launch["rocket"]["agencies"][0]["countryCode"]
+        self._agencyname = launch["location"]["pads"][0]["agencies"][0]["name"]
+        self._agencycountry = launch["location"]["countryCode"]
         try:
             launch["vidURLs"][0]
         except Exception:
