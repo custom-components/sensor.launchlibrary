@@ -23,4 +23,4 @@ key | description
 [Home-Assistant demo site.](https://ha-test-launchlibrary.halfdecent.io)
   
   
-This component is using the [launchlibrary.net](http://launchlibrary.net/) API to get the information.
+This platform is using the [launchlibrary.net](http://launchlibrary.net/) API to get the information.
