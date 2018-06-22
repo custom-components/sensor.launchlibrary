@@ -8,8 +8,6 @@ To get started put `/custom_components/sensor/launchlibrary.py` here:
 **Example configuration.yaml:**
 ```yaml
 sensor:
-  platform: launchlibrary
-  sameid: 2190400
 ```
 **Configuration variables:**  
   
