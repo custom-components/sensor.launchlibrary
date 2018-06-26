@@ -23,4 +23,5 @@ key | description
 [Home-Assistant demo site.](https://ha-test-launchlibrary.halfdecent.io)
   
   
-This platform is using the [launchlibrary.net](http://launchlibrary.net/) API to get the information.
+This platform is using the [launchlibrary.net](http://launchlibrary.net/) API to get the information.  
+Due to how  are importerd, it is normal to see a  error on first boot after adding this, to resolve it, restart Home-Assistant.
