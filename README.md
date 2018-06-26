@@ -24,4 +24,4 @@ key | description
   
   
 This platform is using the [launchlibrary.net](http://launchlibrary.net/) API to get the information.  
-Due to how  are importerd, it is normal to see a  error on first boot after adding this, to resolve it, restart Home-Assistant.
+Due to how `custom_componentes` are importerd, it is normal to see a `ModuleNotFoundError` error on first boot after adding this, to resolve it, restart Home-Assistant.
