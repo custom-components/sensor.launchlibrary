@@ -23,8 +23,6 @@ key | description
 #### Sample overview
 ![Sample overview](overview.png)
   
-[Home-Assistant demo site.](https://ha-test-launchlibrary.halfdecent.io)
-  
   
 This platform is using the [launchlibrary.net](http://launchlibrary.net/) API to get the information.  
 ***
