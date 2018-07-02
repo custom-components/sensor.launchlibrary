@@ -1,6 +1,8 @@
 # custom_component to get info about next launches.
   
-![Version](https://img.shields.io/badge/version-1.0.1-green.svg?style=for-the-badge) ![mantained](https://img.shields.io/maintenance/yes/2018.svg?style=for-the-badge)   
+![Version](https://img.shields.io/badge/version-component_version'
+'1.0.1'
+COMPONENT_VERSIO-green.svg?style=for-the-badge) ![mantained](https://img.shields.io/maintenance/yes/2018.svg?style=for-the-badge)   
 A platform which allows you to get information from alerts.weather.gov. 
   
 To get started put `/custom_components/sensor/launchlibrary.py` here:  
