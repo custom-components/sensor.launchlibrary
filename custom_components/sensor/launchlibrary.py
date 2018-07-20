@@ -8,19 +8,17 @@ import voluptuous as vol
 from datetime import timedelta
 from homeassistant.helpers.entity import Entity
 
+_version__ = '1.0.2'
+
 ATTR_STREAM = 'stream'
 ATTR_LAUNCH_NAME = 'launch_name'
 ATTR_LAUNCH_TIMESTAMP = 'timestamp'
 ATTR_AGENCY_NAME = 'agengy'
 ATTR_AGENCY_COUNTRY = 'agengy_country_code'
-ATTR_COMPONENT = 'component'
-ATTR_COMPONENT_VERSION = 'component_version'
 
 SCAN_INTERVAL = timedelta(seconds=60)
 
 ICON = 'mdi:rocket'
-COMPONENT_NAME = 'launchlibrary'
-COMPONENT_VERSION = '1.0.1'
 
 def setup_platform(hass, config, add_devices, discovery_info=None):
     add_devices([LaunchSensor()])
@@ -33,8 +31,6 @@ class LaunchSensor(Entity):
         self._agencyname = None
         self._agencycountry = None
         self._launchstream = None
-        self._component = COMPONENT_NAME
-        self._componentversion = COMPONENT_VERSION
         self.update()
 
     def update(self):
@@ -73,6 +69,4 @@ class LaunchSensor(Entity):
             ATTR_AGENCY_NAME: self._agencyname,
             ATTR_AGENCY_COUNTRY: self._agencycountry,
             ATTR_STREAM: self._launchstream,
-            ATTR_COMPONENT: self._component,
-            ATTR_COMPONENT_VERSION: self._componentversion
         }
