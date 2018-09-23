@@ -20,7 +20,7 @@ SCAN_INTERVAL = timedelta(seconds=60)
 
 
 def setup_platform(hass, config, add_devices, discovery_info=None):
-    """Setting up the platform."""
+    """Set up the platform."""
     add_devices([LaunchSensor()])
 
 
