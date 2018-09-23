@@ -1,5 +1,5 @@
 """
-A component which allows you to get information about next launches
+A component which allows you to get information about next launches.
 
 For more details about this component, please refer to the documentation at
 https://github.com/HalfDecent/HA-Custom_components/launchlibrary
@@ -20,13 +20,15 @@ SCAN_INTERVAL = timedelta(seconds=60)
 
 
 def setup_platform(hass, config, add_devices, discovery_info=None):
-    """Setup the platform"""
+    """Setup the platform."""
+
     add_devices([LaunchSensor()])
 
 
 class LaunchSensor(Entity):
     """The sensor class."""
     def __init__(self):
+        """Initialize the sensor platform."""
         self.update()
 
     def update(self):
