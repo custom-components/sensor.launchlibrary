@@ -18,9 +18,11 @@ ATTR_AGENCY_COUNTRY = 'agency_country_code'
 
 SCAN_INTERVAL = timedelta(seconds=60)
 
+
 def setup_platform(hass, config, add_devices, discovery_info=None):
     """Setup the platform"""
     add_devices([LaunchSensor()])
+
 
 class LaunchSensor(Entity):
     """The sensor class."""
