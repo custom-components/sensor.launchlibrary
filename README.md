@@ -1,4 +1,4 @@
-# custom_component to get info about next launches.
+# sensor.launchlibrary [![Build Status](https://travis-ci.com/custom-components/sensor.launchlibrary.svg?branch=master)](https://travis-ci.com/custom-components/sensor.launchlibrary)
 
 A platform which allows you to get information from alerts.weather.gov.
   
@@ -10,7 +10,6 @@ To get started put `/custom_components/sensor/launchlibrary.py` here:
 ```yaml
 sensor:
   platform: launchlibrary
-  sameid: 2190400
 ```
 
 **Configuration variables:**  
