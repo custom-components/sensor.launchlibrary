@@ -20,13 +20,13 @@ SCAN_INTERVAL = timedelta(seconds=60)
 
 
 def setup_platform(hass, config, add_devices, discovery_info=None):
-    """Setup the platform."""
-
+    """Setting up the platform."""
     add_devices([LaunchSensor()])
 
 
 class LaunchSensor(Entity):
     """The sensor class."""
+
     def __init__(self):
         """Initialize the sensor platform."""
         self.update()
