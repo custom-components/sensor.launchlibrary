@@ -1,3 +1,7 @@
+# Archived
+
+This is now a part of Home Assistant https://www.home-assistant.io/components/sensor.launch_library/
+
 # sensor.launchlibrary [![Build Status](https://travis-ci.com/custom-components/sensor.launchlibrary.svg?branch=master)](https://travis-ci.com/custom-components/sensor.launchlibrary)
 
 A platform which allows you to get information from alerts.weather.gov.
